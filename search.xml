@@ -1307,7 +1307,9 @@
   <entry>
     <title>MyBatis动态SQL</title>
     <url>/2021/11/24/MyBatis%E5%8A%A8%E6%80%81SQL/</url>
-    <content><![CDATA[<h1 id="MyBatis框架动态SQL处理简单的多参数查询"><a href="#MyBatis框架动态SQL处理简单的多参数查询" class="headerlink" title="MyBatis框架动态SQL处理简单的多参数查询"></a>MyBatis框架动态SQL处理简单的多参数查询</h1><h4 id="常用标签"><a href="#常用标签" class="headerlink" title="常用标签"></a>常用标签</h4><table>
+    <content><![CDATA[<h1 id="MyBatis框架动态SQL处理简单的多参数查询"><a href="#MyBatis框架动态SQL处理简单的多参数查询" class="headerlink" title="MyBatis框架动态SQL处理简单的多参数查询"></a>MyBatis框架动态SQL处理简单的多参数查询</h1><h4 id="常用标签"><a href="#常用标签" class="headerlink" title="常用标签"></a>常用标签</h4><span id="more"></span>
+
+<table>
 <thead>
 <tr>
 <th>标签</th>
@@ -1383,16 +1385,35 @@
   <entry>
     <title>Mybatis知识点</title>
     <url>/2021/11/15/Mybatis%E7%9F%A5%E8%AF%86%E7%82%B9/</url>
-    <content><![CDATA[<p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131512839.png" alt="image-20211124184824250"></p>
+    <content><![CDATA[<span id="more"></span>
+
+<p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131512839.png" alt="image-20211124184824250"></p>
 ]]></content>
       <categories>
         <category>Java开发之SSM企业轻量级开发框架</category>
       </categories>
   </entry>
   <entry>
+    <title>Windows系统使用技巧</title>
+    <url>/2021/07/07/Windows%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</url>
+    <content><![CDATA[<p>虽然用了好久的电脑，但是对很多系统的常用技巧都不熟悉，也不曾总结，这一次借看书的机会总结一下。 </p>
+<span id="more"></span>
+
+<h1 id="开启超级管理员账户Administrotor"><a href="#开启超级管理员账户Administrotor" class="headerlink" title="开启超级管理员账户Administrotor"></a><strong>开启超级管理员账户Administrotor</strong></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">net user administrator /active:yes</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">net user administrator /active:no </span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>教程类</category>
+      </categories>
+  </entry>
+  <entry>
     <title>SQL映射文件详解</title>
     <url>/2021/11/19/SQL%E6%98%A0%E5%B0%84%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</url>
     <content><![CDATA[<h1 id="SQL映射的XML文件"><a href="#SQL映射的XML文件" class="headerlink" title="SQL映射的XML文件"></a>SQL映射的XML文件</h1><h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><p>MyBatis真正的特色在于SQL映射语句，功能强大，使用简单</p>
+<span id="more"></span>
+
 <h2 id="SQL映射文件的几个顶级元素"><a href="#SQL映射文件的几个顶级元素" class="headerlink" title="SQL映射文件的几个顶级元素"></a>SQL映射文件的几个顶级元素</h2><ol>
 <li><p>mapper – SQL映射文件的根元素，有一个namespace属性</p>
 <ol>
@@ -1661,21 +1682,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Windows系统使用技巧</title>
-    <url>/2021/07/07/Windows%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/</url>
-    <content><![CDATA[<p>虽然用了好久的电脑，但是对很多系统的常用技巧都不熟悉，也不曾总结，这一次借看书的机会总结一下。 </p>
-<span id="more"></span>
-
-<h1 id="开启超级管理员账户Administrotor"><a href="#开启超级管理员账户Administrotor" class="headerlink" title="开启超级管理员账户Administrotor"></a><strong>开启超级管理员账户Administrotor</strong></h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">net user administrator /active:yes</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">net user administrator /active:no </span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>教程类</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2021/12/06/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -1780,6 +1786,20 @@
       </categories>
   </entry>
   <entry>
+    <title>关于我</title>
+    <url>/2999/01/01/%E5%85%B3%E4%BA%8E%E6%88%91/</url>
+    <content><![CDATA[<h1 id="这只是一个静态博客"><a href="#这只是一个静态博客" class="headerlink" title="这只是一个静态博客"></a>这只是一个静态博客</h1><ol>
+<li>WordPress博客将会在2022年6月1日正式上线</li>
+<li>本博客是2021年创建的</li>
+<li>博客是Hexo 主题是Next 托管与 <a href="https://gitee.com/">Gitee</a></li>
+<li>我的Gitee地址 <a href="https://gitee.com/olinl">https://gitee.com/olinl</a></li>
+</ol>
+]]></content>
+      <tags>
+        <tag>2022</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>初始MyBatis框架</title>
     <url>/2021/11/17/%E5%88%9D%E5%A7%8BMyBatis%E6%A1%86%E6%9E%B6/</url>
     <content><![CDATA[<h1 id="框架的简单介绍"><a href="#框架的简单介绍" class="headerlink" title="框架的简单介绍"></a>框架的简单介绍</h1><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>是一种经过检验的,具有特定功能的未成品软件</p>
@@ -1788,6 +1808,8 @@
 <li>提供可重用的公共结构</li>
 <li>按一定规则组织的一组组件</li>
 </ol>
+<span id="more"></span>
+
 <h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><ol>
 <li>不用再考虑公共问题</li>
 <li>专心在业务实现上</li>
@@ -2800,6 +2822,40 @@
       </categories>
   </entry>
   <entry>
+    <title>第三章 多态</title>
+    <url>/2021/06/04/%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E5%A4%9A%E6%80%81/</url>
+    <content><![CDATA[<h2 id="1-什么是多态"><a href="#1-什么是多态" class="headerlink" title="1.什么是多态"></a>1.什么是多态</h2><p>​    多态是具有表现多种形态的能力的特征</p>
+<p>​    同一种操作，由于条件不同，产生的结果也不同</p>
+<p>​    多态：同一个引用类型，使用不同的实例而执行不同操作 </p>
+<p>​    多态就是子类转换成父类    父类类型new子类对象</p>
+<span id="more"></span>
+
+<h2 id="2-如何实现多态"><a href="#2-如何实现多态" class="headerlink" title="2.如何实现多态"></a>2.如何实现多态</h2><h3 id="实现思路"><a href="#实现思路" class="headerlink" title="实现思路"></a>实现思路</h3><p>​    编写具有继承关系的父类和子类<br>​    子类方法重写父类方法</p>
+<h3 id="两种形式"><a href="#两种形式" class="headerlink" title="两种形式"></a>两种形式</h3><h4 id="使用父类作为方法形参实现多态"><a href="#使用父类作为方法形参实现多态" class="headerlink" title="使用父类作为方法形参实现多态"></a>使用父类作为方法形参实现多态</h4><ul>
+<li><p>将一个父类的引用指向一个子类对象，称为向上转型（upcasting），自动进行类型转换</p>
+</li>
+<li><p>此时通过父类引用变量调用的是子类覆盖或继承父类的方法，不是父类的方法</p>
+</li>
+<li><p>此时通过父类引用变量无法调用子类特有的方法</p>
+</li>
+</ul>
+<h4 id="使用父类作为方法返回值实现多态"><a href="#使用父类作为方法返回值实现多态" class="headerlink" title="使用父类作为方法返回值实现多态"></a>使用父类作为方法返回值实现多态</h4><h3 id="父类到子类的转换"><a href="#父类到子类的转换" class="headerlink" title="父类到子类的转换"></a>父类到子类的转换</h3><p><strong>定义</strong><br>该运算符用于判断一个对象是否属于属于一个类或者实现了一个接口，结果为true或false。在强制类型转换之前通过<strong>instanceof</strong>运算符检查对象的真实类型，在进行相应的强制类型转换，这样就可以避免类型转换异常，从而提高代码的健壮性。</p>
+<p><strong>用 instanceof 运算符</strong>： instanceof 通常和强制类型转换结合使用   判断对象</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">对象  <span class="keyword">instanceof</span>  类或接口	</span><br></pre></td></tr></table></figure>
+
+<p>在进行强制引用类型转换时，先通过<strong>instanceof</strong>运算符进行类型判断，再进行相应的强制类型转换，这样可以有效地避免出现类型转换异常。</p>
+<h2 id="3-实现多态的3个条件"><a href="#3-实现多态的3个条件" class="headerlink" title="3.实现多态的3个条件"></a>3.实现多态的3个条件</h2><ul>
+<li>继承的存在（继承是多态的基础，没有继承就没有多态）。</li>
+<li>子类重写父类的方法（多态下调用子类重写后的方法）。</li>
+<li>父类引用变量指向子类对象（子类到父类的类型转换）。</li>
+</ul>
+<h2 id="4-总结"><a href="#4-总结" class="headerlink" title="4.总结"></a>4.总结</h2><p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131510367.png" alt="第三章 多态"></p>
+]]></content>
+      <categories>
+        <category>使用Java实现面向对象编程整理</category>
+      </categories>
+  </entry>
+  <entry>
     <title>第二章 继承</title>
     <url>/2021/06/04/%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%E7%BB%A7%E6%89%BF/</url>
     <content><![CDATA[<h1>一 继承的一些定义</h1>
@@ -2919,40 +2975,6 @@
 
 <p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131510116.png" alt="继承知识汇总"></p>
 </h1></h1></h2></h2></h1></h1></h3></h3></h3></h3></h3></h3></h3></h3></h3></h3>]]></content>
-      <categories>
-        <category>使用Java实现面向对象编程整理</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>第三章 多态</title>
-    <url>/2021/06/04/%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E5%A4%9A%E6%80%81/</url>
-    <content><![CDATA[<h2 id="1-什么是多态"><a href="#1-什么是多态" class="headerlink" title="1.什么是多态"></a>1.什么是多态</h2><p>​    多态是具有表现多种形态的能力的特征</p>
-<p>​    同一种操作，由于条件不同，产生的结果也不同</p>
-<p>​    多态：同一个引用类型，使用不同的实例而执行不同操作 </p>
-<p>​    多态就是子类转换成父类    父类类型new子类对象</p>
-<span id="more"></span>
-
-<h2 id="2-如何实现多态"><a href="#2-如何实现多态" class="headerlink" title="2.如何实现多态"></a>2.如何实现多态</h2><h3 id="实现思路"><a href="#实现思路" class="headerlink" title="实现思路"></a>实现思路</h3><p>​    编写具有继承关系的父类和子类<br>​    子类方法重写父类方法</p>
-<h3 id="两种形式"><a href="#两种形式" class="headerlink" title="两种形式"></a>两种形式</h3><h4 id="使用父类作为方法形参实现多态"><a href="#使用父类作为方法形参实现多态" class="headerlink" title="使用父类作为方法形参实现多态"></a>使用父类作为方法形参实现多态</h4><ul>
-<li><p>将一个父类的引用指向一个子类对象，称为向上转型（upcasting），自动进行类型转换</p>
-</li>
-<li><p>此时通过父类引用变量调用的是子类覆盖或继承父类的方法，不是父类的方法</p>
-</li>
-<li><p>此时通过父类引用变量无法调用子类特有的方法</p>
-</li>
-</ul>
-<h4 id="使用父类作为方法返回值实现多态"><a href="#使用父类作为方法返回值实现多态" class="headerlink" title="使用父类作为方法返回值实现多态"></a>使用父类作为方法返回值实现多态</h4><h3 id="父类到子类的转换"><a href="#父类到子类的转换" class="headerlink" title="父类到子类的转换"></a>父类到子类的转换</h3><p><strong>定义</strong><br>该运算符用于判断一个对象是否属于属于一个类或者实现了一个接口，结果为true或false。在强制类型转换之前通过<strong>instanceof</strong>运算符检查对象的真实类型，在进行相应的强制类型转换，这样就可以避免类型转换异常，从而提高代码的健壮性。</p>
-<p><strong>用 instanceof 运算符</strong>： instanceof 通常和强制类型转换结合使用   判断对象</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">对象  <span class="keyword">instanceof</span>  类或接口	</span><br></pre></td></tr></table></figure>
-
-<p>在进行强制引用类型转换时，先通过<strong>instanceof</strong>运算符进行类型判断，再进行相应的强制类型转换，这样可以有效地避免出现类型转换异常。</p>
-<h2 id="3-实现多态的3个条件"><a href="#3-实现多态的3个条件" class="headerlink" title="3.实现多态的3个条件"></a>3.实现多态的3个条件</h2><ul>
-<li>继承的存在（继承是多态的基础，没有继承就没有多态）。</li>
-<li>子类重写父类的方法（多态下调用子类重写后的方法）。</li>
-<li>父类引用变量指向子类对象（子类到父类的类型转换）。</li>
-</ul>
-<h2 id="4-总结"><a href="#4-总结" class="headerlink" title="4.总结"></a>4.总结</h2><p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131510367.png" alt="第三章 多态"></p>
-]]></content>
       <categories>
         <category>使用Java实现面向对象编程整理</category>
       </categories>
@@ -3084,6 +3106,8 @@
     <title>第八章 File I/O</title>
     <url>/2021/06/04/%E7%AC%AC%E5%85%AB%E7%AB%A0%20File%20IO/</url>
     <content><![CDATA[<h1 id="第八章-File-I-O"><a href="#第八章-File-I-O" class="headerlink" title="第八章 File I/O"></a>第八章 File I/O</h1><h2 id="1-File类"><a href="#1-File类" class="headerlink" title="1.File类"></a>1.File类</h2><p>操作文件和文件夹</p>
+<span id="more"></span>
+
 <h2 id="File类常用方法"><a href="#File类常用方法" class="headerlink" title="File类常用方法"></a>File类常用方法</h2><table>
 <thead>
 <tr>
@@ -3128,7 +3152,7 @@
 <td>返回文件的长度，单位为字节, 如果文件不存在，则返回 0L</td>
 </tr>
 </tbody></table>
-<span id="more"></span>
+<!--more-->
 
 <h2 id="2-FileInputStream-字节流的写入-不能用于中文"><a href="#2-FileInputStream-字节流的写入-不能用于中文" class="headerlink" title="2. FileInputStream 字节流的写入    不能用于中文"></a>2. FileInputStream 字节流的写入    不能用于中文</h2><h3 id="InputStream-常用方法"><a href="#InputStream-常用方法" class="headerlink" title="InputStream 常用方法"></a>InputStream 常用方法</h3><table>
 <thead>
