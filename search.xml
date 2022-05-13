@@ -17,7 +17,7 @@
 <li>脚本语言，语法和Java类似</li>
 <li>解释性语言，边执行边解释</li>
 </ol>
-<h1 id="JavaScript组成"><a href="#JavaScript组成" class="headerlink" title="JavaScript组成"></a>JavaScript组成</h1><p><img src="/2021/07/07/JavaScript%E5%9F%BA%E7%A1%80/JavaScript%E5%9F%BA%E7%A1%801.png" alt="JavaScript组成"></p>
+<h1 id="JavaScript组成"><a href="#JavaScript组成" class="headerlink" title="JavaScript组成"></a>JavaScript组成</h1><p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131511846.png" alt="JavaScript组成"></p>
 <h1 id="JavaScript的基本结构"><a href="#JavaScript的基本结构" class="headerlink" title="JavaScript的基本结构"></a>JavaScript的基本结构</h1><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;script type=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><br><span class="line">    &lt;!—</span><br><span class="line">          JavaScript 语句;</span><br><span class="line">    —&gt;</span><br><span class="line">&lt;/script &gt;</span><br></pre></td></tr></table></figure>
 
 <script>…</script>可以包含在文档中的任何地方，只要保证这些代码在被使用前已读取并加载到内存即可
@@ -30,7 +30,7 @@
 <li><p>内部: 直接在HTML标签中</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;input name=<span class="string">&quot;btn&quot;</span> type=<span class="string">&quot;button&quot;</span> value=<span class="string">&quot;弹出消息框&quot;</span>   </span><br><span class="line">   onclick=<span class="string">&quot;javascript:alert(&#x27;欢迎你&#x27;);&quot;</span>/&gt;</span><br></pre></td></tr></table></figure></li>
 </ol>
-<h1 id="JavaScript核心语法"><a href="#JavaScript核心语法" class="headerlink" title="JavaScript核心语法"></a>JavaScript核心语法</h1><p><img src="/2021/07/07/JavaScript%E5%9F%BA%E7%A1%80/JavaScript%E5%9F%BA%E7%A1%802.png" alt="JavaScript核心语法"></p>
+<h1 id="JavaScript核心语法"><a href="#JavaScript核心语法" class="headerlink" title="JavaScript核心语法"></a>JavaScript核心语法</h1><p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131511869.png" alt="JavaScript核心语法"></p>
 <h2 id="核心语法—变量"><a href="#核心语法—变量" class="headerlink" title="核心语法—变量"></a>核心语法—变量</h2><ol>
 <li><h3 id="先声明变量再赋值"><a href="#先声明变量再赋值" class="headerlink" title="先声明变量再赋值"></a>先声明变量再赋值</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span>   width;	<span class="comment">//var －  用于声明变量的关键字</span></span><br><span class="line">width = <span class="number">5</span>;		<span class="comment">//width － 变量名</span></span><br></pre></td></tr></table></figure></li>
 <li><h3 id="同时声明和赋值变量"><a href="#同时声明和赋值变量" class="headerlink" title="同时声明和赋值变量"></a>同时声明和赋值变量</h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> catName= <span class="string">&quot;皮皮&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> x, y, z = <span class="number">10</span>;</span><br></pre></td></tr></table></figure></li>
@@ -307,7 +307,7 @@
 <td>域的内容被改变</td>
 </tr>
 </tbody></table>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p><img src="/2021/07/07/JavaScript%E5%9F%BA%E7%A1%80/image-20210711093243759.png" alt="JavaScript基础总结"></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131512661.png" alt="JavaScript基础总结"></p>
 ]]></content>
       <categories>
         <category>使用jQuery快速高效制作网页交互特效</category>
@@ -414,7 +414,7 @@
 <li><p>prototype就是通过调用构造函数而创建的那个对象实例的原型对象，使用原型对象的好处就是可以让所有对象实例共享它所有的属性和方法，也就是说不必再构造函数中定义对象实例的信息，可以将这些信息直接添加到原型对象中。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Flower</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    Flower.prototype.name=<span class="string">&quot;曼陀罗花&quot;</span>;</span><br><span class="line">    Flower.prototype.genera=<span class="string">&quot;茄科 曼陀罗属&quot;</span>;</span><br><span class="line">    Flower.prototype.area=<span class="string">&quot;印度、中国北部&quot;</span>;</span><br><span class="line">    Flower.prototype.uses=<span class="string">&quot;观赏或药用&quot;</span>;</span><br><span class="line">    Flower.prototype.showName=<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        alert(<span class="built_in">this</span>.name);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> flower1=<span class="keyword">new</span> Flower();</span><br><span class="line">    flower1.showName();</span><br><span class="line">    <span class="keyword">var</span> flower2=<span class="keyword">new</span> Flower();</span><br><span class="line">    flower2.showName();</span><br><span class="line">    alert(flower1.showName==flower2.showName);</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2021/07/18/JavaScript%E5%AF%B9%E8%B1%A1%E5%8F%8A%E5%88%9D%E5%A7%8B%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/image-20210718111954605.png" alt="image-20210718111954605"></p>
+<p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131511835.png" alt="image-20210718111954605"></p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">对象._ _proto_ _指向原型对象</span><br><span class="line">原型对象用<span class="title">constructor</span>属性指向构造函数</span><br><span class="line">类用<span class="title">prototype</span>执行原型对象</span><br></pre></td></tr></table></figure></li>
 </ol>
 </li>
@@ -440,7 +440,7 @@
 <li><p>一个原型对象是另一个原型对象的实例<br>相关的原型对象层层递进，就构成了实例与原型的链条，就是原型链</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Humans</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.foot=<span class="number">2</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    Humans.prototype.getFoot=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">       <span class="keyword">return</span> <span class="built_in">this</span>.foot;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">Man</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.head=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    Man.prototype=<span class="keyword">new</span> Humans();          <span class="comment">//继承了Humans</span></span><br><span class="line">    Man.prototype.getHead=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">this</span>.head;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> man1=<span class="keyword">new</span> Man();</span><br><span class="line">    alert(man1.getFoot());                          <span class="comment">//2</span></span><br><span class="line">    alert(man1 <span class="keyword">instanceof</span> <span class="built_in">Object</span>);          <span class="comment">//true     </span></span><br><span class="line">    alert(man1 <span class="keyword">instanceof</span> Humans);        <span class="comment">//true</span></span><br><span class="line">    alert(man1 <span class="keyword">instanceof</span> Man);          <span class="comment">//true</span></span><br></pre></td></tr></table></figure></li>
 <li><p>构造函数和原型之间的关系</p>
-<p><img src="/2021/07/18/JavaScript%E5%AF%B9%E8%B1%A1%E5%8F%8A%E5%88%9D%E5%A7%8B%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/image-20210718112801650.png" alt="image-20210718112801650"></p>
+<p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131511738.png" alt="image-20210718112801650"></p>
 </li>
 <li><p>实际上就是重写圆形对象，赋值于一个新类型的实例，也就是说，原来存于新实例中的所有属性和方法，现在也存在与新的原型对象中了</p>
 </li>
@@ -455,7 +455,7 @@
 </li>
 <li>最后一步才会找到该方法，在找不到属性或方法的情况下，搜索过程总要一环一环地前行到原型链的末端才会停下来。</li>
 <li>上面示例展示的原型链还少一环,大家知道，所有的引用类型默认都继承了Object，而这个继承也是通过原型链实现的。所有函数都默认原型都是Object 的实例，因此默认原型都会包含一个内部指针，指向Object.prototype，这也正是所有自定义类型都会继承toString( ). valueOf()等默认方法的根本原因，所以上面示例展示的原型链中还应该包括另外一个继承层次,此示例的完整原型链如图4.8所示。</li>
-<li><img src="/2021/07/18/JavaScript%E5%AF%B9%E8%B1%A1%E5%8F%8A%E5%88%9D%E5%A7%8B%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/image-20210718113518713.png" alt="image-20210718113518713"></li>
+<li><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131511152.png" alt="image-20210718113518713"></li>
 </ol>
 </li>
 </ol>
@@ -494,7 +494,7 @@
 </ol>
 </li>
 </ol>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p><img src="/2021/07/18/JavaScript%E5%AF%B9%E8%B1%A1%E5%8F%8A%E5%88%9D%E5%A7%8B%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/image-20210718114438758.png" alt="image-20210718114438758"></p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131511300.png" alt="image-20210718114438758"></p>
 ]]></content>
       <categories>
         <category>使用jQuery快速高效制作网页交互特效</category>
@@ -509,7 +509,7 @@
 <li><p>BOM提供了独立于内容的、可以与浏览器窗口进行互动的对象结构</p>
 <span id="more"></span></li>
 </ol>
-<p><img src="/2021/07/11/JavaScript%E6%93%8D%E4%BD%9CBOM%E5%AF%B9%E8%B1%A1/image-20210711112651203.png" alt="image-20210711112651203"></p>
+<p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131511906.png" alt="image-20210711112651203"></p>
 <ol start="3">
 <li>BOM可实现功能<ol>
 <li>弹出新的浏览器窗口</li>
@@ -741,7 +741,7 @@
 <p>语法</p>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">document</span>.referrer</span><br><span class="line"><span class="built_in">document</span>.URL</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2021/07/11/JavaScript%E6%93%8D%E4%BD%9CBOM%E5%AF%B9%E8%B1%A1/image-20210711114644954.png" alt="image-20210711114644954"></p>
+<p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131511775.png" alt="image-20210711114644954"></p>
 </li>
 <li><h3 id="Document对象应用"><a href="#Document对象应用" class="headerlink" title="Document对象应用"></a>Document对象应用</h3><ol>
 <li><p>判断页面是否是链接进入</p>
@@ -916,7 +916,7 @@
 <h3 id="制作12进制的时钟特效"><a href="#制作12进制的时钟特效" class="headerlink" title="制作12进制的时钟特效"></a>制作12进制的时钟特效</h3><p>代码:</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">h1</span> <span class="attr">id</span>=<span class="string">&quot;time&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript">	<span class="function"><span class="keyword">function</span> <span class="title">showTime</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> timefinly = <span class="keyword">new</span> <span class="built_in">Date</span>();</span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> year = timefinly.getFullYear(); <span class="comment">//年</span></span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> month = timefinly.getMonth() + <span class="number">1</span>; <span class="comment">//月</span></span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> day = timefinly.getDate(); <span class="comment">//日</span></span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> hour = timefinly.getHours(); <span class="comment">//时</span></span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> APM = <span class="string">&quot;AM&quot;</span>;</span></span><br><span class="line"><span class="javascript">		<span class="keyword">if</span> (hour &gt; <span class="number">12</span>) &#123;</span></span><br><span class="line"><span class="javascript">			APM = <span class="string">&quot;PM&quot;</span>;</span></span><br><span class="line"><span class="javascript">		&#125;</span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> min = timefinly.getMinutes(); <span class="comment">//分</span></span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> sec = timefinly.getSeconds(); <span class="comment">//秒</span></span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> weekNum = timefinly.getDay(); <span class="comment">//周</span></span></span><br><span class="line"><span class="javascript">		<span class="keyword">if</span> (weekNum == <span class="number">0</span>) &#123;</span></span><br><span class="line"><span class="javascript">			weekNum = <span class="number">7</span>;</span></span><br><span class="line"><span class="javascript">		&#125;</span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> week=<span class="string">&quot;&quot;</span>;</span></span><br><span class="line"><span class="javascript">		<span class="keyword">switch</span> (weekNum) &#123;</span></span><br><span class="line"><span class="javascript">			<span class="keyword">case</span> <span class="number">1</span>:</span></span><br><span class="line"><span class="javascript">			week=<span class="string">&quot;一&quot;</span>;</span></span><br><span class="line"><span class="javascript">				<span class="keyword">break</span>;</span></span><br><span class="line"><span class="javascript">			<span class="keyword">case</span> <span class="number">2</span>:</span></span><br><span class="line"><span class="javascript">			week=<span class="string">&quot;二&quot;</span>;</span></span><br><span class="line"><span class="javascript">				<span class="keyword">break</span>;</span></span><br><span class="line"><span class="javascript">			<span class="keyword">case</span> <span class="number">3</span>:</span></span><br><span class="line"><span class="javascript">			week=<span class="string">&quot;三&quot;</span>;</span></span><br><span class="line"><span class="javascript">				<span class="keyword">break</span>;</span></span><br><span class="line"><span class="javascript">			<span class="keyword">case</span> <span class="number">4</span>:</span></span><br><span class="line"><span class="javascript">			week=<span class="string">&quot;四&quot;</span>;</span></span><br><span class="line"><span class="javascript">				<span class="keyword">break</span>;</span></span><br><span class="line"><span class="javascript">			<span class="keyword">case</span> <span class="number">5</span>:</span></span><br><span class="line"><span class="javascript">			week=<span class="string">&quot;五&quot;</span>;</span></span><br><span class="line"><span class="javascript">				<span class="keyword">break</span>;</span></span><br><span class="line"><span class="javascript">			<span class="keyword">case</span> <span class="number">6</span>:</span></span><br><span class="line"><span class="javascript">			week=<span class="string">&quot;六&quot;</span>;</span></span><br><span class="line"><span class="javascript">				<span class="keyword">break</span>;</span></span><br><span class="line"><span class="javascript">			<span class="keyword">case</span> <span class="number">7</span>:</span></span><br><span class="line"><span class="javascript">			week=<span class="string">&quot;日&quot;</span>;</span></span><br><span class="line"><span class="javascript">				<span class="keyword">break</span>;</span></span><br><span class="line"><span class="javascript">		&#125;</span></span><br><span class="line"><span class="javascript">		<span class="keyword">var</span> content = year + <span class="string">&quot;年&quot;</span> + month + <span class="string">&quot;月&quot;</span> + day + <span class="string">&quot;日     &quot;</span> + hour + <span class="string">&quot;:&quot;</span> + min + <span class="string">&quot;:&quot;</span> + sec + <span class="string">&quot;     &quot;</span> + APM +</span></span><br><span class="line"><span class="javascript">			<span class="string">&quot;    星期&quot;</span> + week</span></span><br><span class="line"><span class="javascript">		<span class="built_in">document</span>.getElementById(<span class="string">&quot;time&quot;</span>).innerText = content;</span></span><br><span class="line"><span class="javascript">	&#125;</span></span><br><span class="line"><span class="javascript">	showTime();</span></span><br><span class="line"><span class="javascript">	<span class="keyword">var</span> atime = <span class="built_in">setInterval</span>(<span class="string">&quot;showTime()&quot;</span>, <span class="number">1000</span>);</span></span><br><span class="line"><span class="javascript">	<span class="comment">//clearInterval(atime);</span></span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p><img src="/2021/07/11/JavaScript%E6%93%8D%E4%BD%9CBOM%E5%AF%B9%E8%B1%A1/image-20210714100816234.png" alt="image-20210714100816234"></p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131511983.png" alt="image-20210714100816234"></p>
 </li>
 </ol>
 ]]></content>
@@ -931,11 +931,11 @@
 <p>使用JavaScript操作DOM分为三个方面：DOM Core (核心) ，HTML-DOM和CSS-DOM。通过这些标准开发人员可以让网页真正动起来，动态得增加，修好，删除数据，使用户与计算机的交互更加便捷，交互也更加丰富，那么下面，大家就一起学习JavaScript操作DOM吧。</p>
 <span id="more"></span>
 
-<p><img src="/2021/07/16/JavaScript%E6%93%8D%E4%BD%9CDOM%E5%AF%B9%E8%B1%A1/image-20210716105304043.png" alt="image-20210716105304043"></p>
+<p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131511386.png" alt="image-20210716105304043"></p>
 <ol>
 <li><h1 id="节点和节点的关系"><a href="#节点和节点的关系" class="headerlink" title="节点和节点的关系"></a>节点和节点的关系</h1></li>
 </ol>
-<p><img src="/2021/07/16/JavaScript%E6%93%8D%E4%BD%9CDOM%E5%AF%B9%E8%B1%A1/image-20210716105352860.png" alt="image-20210716105352860"></p>
+<p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131511814.png" alt="image-20210716105352860"></p>
 <p>HTML中的每个标签和元素都是一个节点,在DOM中是这样规定的.</p>
 <ul>
 <li>整个文档是一个文档节点</li>
@@ -1298,7 +1298,7 @@
 </li>
 <li><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1></li>
 </ol>
-<p><img src="/2021/07/16/JavaScript%E6%93%8D%E4%BD%9CDOM%E5%AF%B9%E8%B1%A1/JavaScript%E6%93%8D%E4%BD%9CDOM%E5%AF%B9%E8%B1%A1%5Cimage-20210716155346308.png" alt="image-20210716155346308"></p>
+<p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131511311.png" alt="image-20210716155346308"></p>
 ]]></content>
       <categories>
         <category>使用jQuery快速高效制作网页交互特效</category>
@@ -1374,7 +1374,7 @@
 </ol>
 <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">trim</span> <span class="attr">prefix</span> = <span class="string">&quot;前缀&quot;</span> </span></span><br><span class="line"><span class="tag">	  <span class="attr">suffix</span> = <span class="string">&quot;后缀&quot;</span> </span></span><br><span class="line"><span class="tag">	  <span class="attr">prefixOverrides</span> = <span class="string">&quot;忽略前缀&quot;</span> </span></span><br><span class="line"><span class="tag">	  <span class="attr">suffixOverrides</span> = <span class="string">&quot;忽略后缀&quot;</span> &gt;</span></span><br><span class="line">	…</span><br><span class="line"><span class="tag">&lt;/<span class="name">trim</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p><img src="/2021/11/24/MyBatis%E5%8A%A8%E6%80%81SQL/image-20211124184430939.png" alt="image-20211124184430939"></p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131512067.png" alt="image-20211124184430939"></p>
 ]]></content>
       <categories>
         <category>Java开发之SSM企业轻量级开发框架</category>
@@ -1383,7 +1383,7 @@
   <entry>
     <title>Mybatis知识点</title>
     <url>/2021/11/15/Mybatis%E7%9F%A5%E8%AF%86%E7%82%B9/</url>
-    <content><![CDATA[<p><img src="/2021/11/15/Mybatis%E7%9F%A5%E8%AF%86%E7%82%B9/image-20211124184824250.png" alt="image-20211124184824250"></p>
+    <content><![CDATA[<p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131512839.png" alt="image-20211124184824250"></p>
 ]]></content>
       <categories>
         <category>Java开发之SSM企业轻量级开发框架</category>
@@ -1652,7 +1652,7 @@
 <li><p>在SQL映射文件配置支持cache后，如果需要对个别查询进行调整，可以单独设置</p>
  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;select id=&quot;selectAll&quot; resultType=&quot;SysUser&quot; </span><br><span class="line">        useCache=&quot;true&quot;&gt;</span><br><span class="line">	……</span><br></pre></td></tr></table></figure>
 
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>  <img src="/2021/11/19/SQL%E6%98%A0%E5%B0%84%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/image-20211119190552285.png" alt="image-20211119190552285"></p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>  <img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131512260.png" alt="image-20211119190552285"></p>
 </li>
 </ul>
 ]]></content>
@@ -2291,7 +2291,7 @@
     <url>/2021/07/09/%E5%AE%89%E8%A3%85Hexo/</url>
     <content><![CDATA[<h1 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h1><ol>
 <li><p>先安装git和node</p>
-<p><img src="/2021/07/09/%E5%AE%89%E8%A3%85Hexo/image-20210709203602142.png" alt="image-20210709203602142"></p>
+<p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131508268.png" alt="image-20210709203602142"></p>
 </li>
 <li><p>安装hexo</p>
 <span id="more"></span>
@@ -2579,7 +2579,7 @@
 
 <h3 id="（3）调用构造方法"><a href="#（3）调用构造方法" class="headerlink" title="（3）调用构造方法"></a>（3）调用构造方法</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">this</span>();</span><br><span class="line"><span class="keyword">this</span>(<span class="string">&quot;小黑&quot;</span>,<span class="number">100</span>,<span class="number">100</span>,<span class="string">&quot;雄&quot;</span>);<span class="comment">//如果使用，必须是构造方法 中的第一条语句</span></span><br></pre></td></tr></table></figure>
 
-<h1 id="四、总结"><a href="#四、总结" class="headerlink" title="四、总结"></a>四、总结</h1><p> ![第一章 对象和封装](第一章 对象和封装\第一章对象和封装.png)</p>
+<h1 id="四、总结"><a href="#四、总结" class="headerlink" title="四、总结"></a>四、总结</h1><p> <img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131511722.png" alt="第一章 对象和封装"></p>
 ]]></content>
       <categories>
         <category>使用Java实现面向对象编程整理</category>
@@ -2698,7 +2698,7 @@
 </ol>
 </li>
 <li><h4 id="线程状态"><a href="#线程状态" class="headerlink" title="线程状态"></a>线程状态</h4><p>如何线程都具有五种状态，即创建，就绪，运行，阻塞，死亡状态。</p>
-<p>![线程的状态](第七章 多线程\第七章多线程1.png)</p>
+<p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131510361.png" alt="线程的状态"></p>
 <ol>
 <li><p>创建状态</p>
 <pre><code>     - 在程序中用构造方法创建了一个线程对象后，新的线程对象就处于创建状态，此时，他已经获取了相应的资源，但还没有处于可运行的状态，这时可以通过 **Thread** 类的方法来设置线程对象的属性。如线程名，设置线程的优先级等。
@@ -2793,41 +2793,7 @@
 </ol>
 <h2 id="四、总结"><a href="#四、总结" class="headerlink" title="四、总结"></a>四、总结</h2></li>
 </ol>
-<p>![第七章多线程2](第七章 多线程\第七章多线程2.png)</p>
-]]></content>
-      <categories>
-        <category>使用Java实现面向对象编程整理</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>第三章 多态</title>
-    <url>/2021/06/04/%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E5%A4%9A%E6%80%81/</url>
-    <content><![CDATA[<h2 id="1-什么是多态"><a href="#1-什么是多态" class="headerlink" title="1.什么是多态"></a>1.什么是多态</h2><p>​    多态是具有表现多种形态的能力的特征</p>
-<p>​    同一种操作，由于条件不同，产生的结果也不同</p>
-<p>​    多态：同一个引用类型，使用不同的实例而执行不同操作 </p>
-<p>​    多态就是子类转换成父类    父类类型new子类对象</p>
-<span id="more"></span>
-
-<h2 id="2-如何实现多态"><a href="#2-如何实现多态" class="headerlink" title="2.如何实现多态"></a>2.如何实现多态</h2><h3 id="实现思路"><a href="#实现思路" class="headerlink" title="实现思路"></a>实现思路</h3><p>​    编写具有继承关系的父类和子类<br>​    子类方法重写父类方法</p>
-<h3 id="两种形式"><a href="#两种形式" class="headerlink" title="两种形式"></a>两种形式</h3><h4 id="使用父类作为方法形参实现多态"><a href="#使用父类作为方法形参实现多态" class="headerlink" title="使用父类作为方法形参实现多态"></a>使用父类作为方法形参实现多态</h4><ul>
-<li><p>将一个父类的引用指向一个子类对象，称为向上转型（upcasting），自动进行类型转换</p>
-</li>
-<li><p>此时通过父类引用变量调用的是子类覆盖或继承父类的方法，不是父类的方法</p>
-</li>
-<li><p>此时通过父类引用变量无法调用子类特有的方法</p>
-</li>
-</ul>
-<h4 id="使用父类作为方法返回值实现多态"><a href="#使用父类作为方法返回值实现多态" class="headerlink" title="使用父类作为方法返回值实现多态"></a>使用父类作为方法返回值实现多态</h4><h3 id="父类到子类的转换"><a href="#父类到子类的转换" class="headerlink" title="父类到子类的转换"></a>父类到子类的转换</h3><p><strong>定义</strong><br>该运算符用于判断一个对象是否属于属于一个类或者实现了一个接口，结果为true或false。在强制类型转换之前通过<strong>instanceof</strong>运算符检查对象的真实类型，在进行相应的强制类型转换，这样就可以避免类型转换异常，从而提高代码的健壮性。</p>
-<p><strong>用 instanceof 运算符</strong>： instanceof 通常和强制类型转换结合使用   判断对象</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">对象  <span class="keyword">instanceof</span>  类或接口	</span><br></pre></td></tr></table></figure>
-
-<p>在进行强制引用类型转换时，先通过<strong>instanceof</strong>运算符进行类型判断，再进行相应的强制类型转换，这样可以有效地避免出现类型转换异常。</p>
-<h2 id="3-实现多态的3个条件"><a href="#3-实现多态的3个条件" class="headerlink" title="3.实现多态的3个条件"></a>3.实现多态的3个条件</h2><ul>
-<li>继承的存在（继承是多态的基础，没有继承就没有多态）。</li>
-<li>子类重写父类的方法（多态下调用子类重写后的方法）。</li>
-<li>父类引用变量指向子类对象（子类到父类的类型转换）。</li>
-</ul>
-<h2 id="4-总结"><a href="#4-总结" class="headerlink" title="4.总结"></a>4.总结</h2><p>![第三章 多态](第三章 多态\第三章多态.png)</p>
+<p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131510367.png" alt="第七章多线程2"></p>
 ]]></content>
       <categories>
         <category>使用Java实现面向对象编程整理</category>
@@ -2951,8 +2917,42 @@
 </ul>
 <h1>五 总结<h1>
 
-<p>![继承知识汇总](第二章 继承\第二章继承.png)</p>
+<p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131510116.png" alt="继承知识汇总"></p>
 </h1></h1></h2></h2></h1></h1></h3></h3></h3></h3></h3></h3></h3></h3></h3></h3>]]></content>
+      <categories>
+        <category>使用Java实现面向对象编程整理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>第三章 多态</title>
+    <url>/2021/06/04/%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E5%A4%9A%E6%80%81/</url>
+    <content><![CDATA[<h2 id="1-什么是多态"><a href="#1-什么是多态" class="headerlink" title="1.什么是多态"></a>1.什么是多态</h2><p>​    多态是具有表现多种形态的能力的特征</p>
+<p>​    同一种操作，由于条件不同，产生的结果也不同</p>
+<p>​    多态：同一个引用类型，使用不同的实例而执行不同操作 </p>
+<p>​    多态就是子类转换成父类    父类类型new子类对象</p>
+<span id="more"></span>
+
+<h2 id="2-如何实现多态"><a href="#2-如何实现多态" class="headerlink" title="2.如何实现多态"></a>2.如何实现多态</h2><h3 id="实现思路"><a href="#实现思路" class="headerlink" title="实现思路"></a>实现思路</h3><p>​    编写具有继承关系的父类和子类<br>​    子类方法重写父类方法</p>
+<h3 id="两种形式"><a href="#两种形式" class="headerlink" title="两种形式"></a>两种形式</h3><h4 id="使用父类作为方法形参实现多态"><a href="#使用父类作为方法形参实现多态" class="headerlink" title="使用父类作为方法形参实现多态"></a>使用父类作为方法形参实现多态</h4><ul>
+<li><p>将一个父类的引用指向一个子类对象，称为向上转型（upcasting），自动进行类型转换</p>
+</li>
+<li><p>此时通过父类引用变量调用的是子类覆盖或继承父类的方法，不是父类的方法</p>
+</li>
+<li><p>此时通过父类引用变量无法调用子类特有的方法</p>
+</li>
+</ul>
+<h4 id="使用父类作为方法返回值实现多态"><a href="#使用父类作为方法返回值实现多态" class="headerlink" title="使用父类作为方法返回值实现多态"></a>使用父类作为方法返回值实现多态</h4><h3 id="父类到子类的转换"><a href="#父类到子类的转换" class="headerlink" title="父类到子类的转换"></a>父类到子类的转换</h3><p><strong>定义</strong><br>该运算符用于判断一个对象是否属于属于一个类或者实现了一个接口，结果为true或false。在强制类型转换之前通过<strong>instanceof</strong>运算符检查对象的真实类型，在进行相应的强制类型转换，这样就可以避免类型转换异常，从而提高代码的健壮性。</p>
+<p><strong>用 instanceof 运算符</strong>： instanceof 通常和强制类型转换结合使用   判断对象</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">对象  <span class="keyword">instanceof</span>  类或接口	</span><br></pre></td></tr></table></figure>
+
+<p>在进行强制引用类型转换时，先通过<strong>instanceof</strong>运算符进行类型判断，再进行相应的强制类型转换，这样可以有效地避免出现类型转换异常。</p>
+<h2 id="3-实现多态的3个条件"><a href="#3-实现多态的3个条件" class="headerlink" title="3.实现多态的3个条件"></a>3.实现多态的3个条件</h2><ul>
+<li>继承的存在（继承是多态的基础，没有继承就没有多态）。</li>
+<li>子类重写父类的方法（多态下调用子类重写后的方法）。</li>
+<li>父类引用变量指向子类对象（子类到父类的类型转换）。</li>
+</ul>
+<h2 id="4-总结"><a href="#4-总结" class="headerlink" title="4.总结"></a>4.总结</h2><p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131510367.png" alt="第三章 多态"></p>
+]]></content>
       <categories>
         <category>使用Java实现面向对象编程整理</category>
       </categories>
@@ -3073,8 +3073,8 @@
 <p><strong>warn</strong>：表明会出现潜在错误的情形</p>
 <p><strong>info</strong>：在粗粒度级别上指明消息，强调应用程序的运行过程。</p>
 <p><strong>debug</strong>：指出细粒度信息事件，对调试应用程序是非常有帮助的。</p>
-<p>![log4j 配置文件](第五章 异常\第五章异常1.png)</p>
-<h2 id="四、总结："><a href="#四、总结：" class="headerlink" title="四、总结："></a>四、总结：</h2><p>![第五章 异常总结](第五章 异常\第五章异常2.png)</p>
+<p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131511450.png" alt="log4j 配置文件"></p>
+<h2 id="四、总结："><a href="#四、总结：" class="headerlink" title="四、总结："></a>四、总结：</h2><p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131511331.png" alt="第五章 异常总结"></p>
 ]]></content>
       <categories>
         <category>使用Java实现面向对象编程整理</category>
@@ -3242,58 +3242,7 @@
 
 <h2 id="6-DataOutputStream-amp-amp-DataInputStream-数据缓存"><a href="#6-DataOutputStream-amp-amp-DataInputStream-数据缓存" class="headerlink" title="6.DataOutputStream &amp;&amp; DataInputStream 数据缓存"></a>6.DataOutputStream &amp;&amp; DataInputStream 数据缓存</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">FileInputStream fis = <span class="keyword">null</span>;</span><br><span class="line">		DataInputStream dis = <span class="keyword">null</span>;</span><br><span class="line">		FileOutputStream fos = <span class="keyword">null</span>;</span><br><span class="line">		DataOutputStream dos = <span class="keyword">null</span>;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			fis = <span class="keyword">new</span> FileInputStream(<span class="string">&quot;读取文件&quot;</span>);</span><br><span class="line">			dis = <span class="keyword">new</span> DataInputStream(fis);</span><br><span class="line">			fos = <span class="keyword">new</span> FileOutputStream(<span class="string">&quot;写入的文件&quot;</span>);</span><br><span class="line">			dos = <span class="keyword">new</span> DataOutputStream(fos);</span><br><span class="line">			<span class="keyword">int</span> date;</span><br><span class="line">			<span class="keyword">while</span> ((date = dis.read()) != -<span class="number">1</span>) &#123;</span><br><span class="line">				dos.write(date);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">			<span class="keyword">try</span> &#123;</span><br><span class="line">				fis.close();</span><br><span class="line">				dis.close();</span><br><span class="line">				fos.close();</span><br><span class="line">				dos.close();</span><br><span class="line">			&#125; <span class="keyword">catch</span> (Exception e2) &#123;</span><br><span class="line">				e2.printStackTrace();</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="7-总结"><a href="#7-总结" class="headerlink" title="7.总结"></a>7.总结</h2><p>![第八章 File IO总结](第八章 File IO/第八章FileIO.png)</p>
-]]></content>
-      <categories>
-        <category>使用Java实现面向对象编程整理</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>第四章 接口</title>
-    <url>/2021/06/04/%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E6%8E%A5%E5%8F%A3/</url>
-    <content><![CDATA[<h2 id="一、什么是接口？"><a href="#一、什么是接口？" class="headerlink" title="一、什么是接口？"></a>一、什么是接口？</h2><p>接口同样是哟中规范和标准，题目可以约束类的行为，是一些方法特征的集合，但是没有方法的实现。</p>
-<p>接口可以看做一种特殊的“抽象类”，但是差异与抽象类万千不同的语法来表示，两者的设计观念也是不同的，抽象类利用与代码复用，接口利于代码的扩展和维护</p>
-<span id="more"></span>
-
-<h2 id="二、接口的语法"><a href="#二、接口的语法" class="headerlink" title="二、接口的语法"></a>二、接口的语法</h2><p>​    <strong>定义接口</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">[修饰符] <span class="class"><span class="keyword">interface</span> 接口名 <span class="keyword">extends</span> 父接口1，父接口2，·········</span>&#123;</span><br><span class="line">    	<span class="comment">//常量定义</span></span><br><span class="line">    	<span class="comment">//方法定义</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>​    类实现接口</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> 类名 <span class="keyword">extends</span> 父类名 <span class="keyword">implements</span> 接口1，接口2，······</span>&#123;</span><br><span class="line">    	<span class="comment">//类成员</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="接口定义的规则："><a href="#接口定义的规则：" class="headerlink" title="接口定义的规则："></a>接口定义的规则：</h4><ul>
-<li><p>接口的命名规则与类相同。如果修饰符是public，则该接口在整个项目中可见；如果是省略修饰符，则该接口只在当前包可见。</p>
-</li>
-<li><p>接口中可以定义常量，不能定义变量。接口中的属性都会自动用 <strong>public static final</strong> 修饰，即接口中的属性都是全局静态常量。接口中的常量必须在定义时制定初始值。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> PI=<span class="number">3.14</span>;</span><br><span class="line"><span class="keyword">int</span> PI=<span class="number">3.14</span>;	<span class="comment">//在接口中，这两个定义语句效果完全相同</span></span><br><span class="line"><span class="keyword">int</span> PI;			<span class="comment">//错误！在接口中必须制定初始值，在类中会有默认值</span></span><br></pre></td></tr></table></figure></li>
-<li><p>接口中所有的方法都是抽象方法。接口中的方法都会自动用 <strong>public abstract</strong> 修饰，即接口中只有全局抽象方法。</p>
-</li>
-<li><p>和抽象类一样，接口也不能实例化，接口不中不能有构造方法。</p>
-</li>
-<li><p>接口之间可以通过 <strong>extends</strong> 实现继承关系，一个接口可以继承多个接口，但接口不能继承类。</p>
-</li>
-<li><p>接口的实际类必须实现接口的全部方法，否则必须定义为抽象类。</p>
-</li>
-</ul>
-<h2 id="三、接口表示一种能力：体现在接口的方法上"><a href="#三、接口表示一种能力：体现在接口的方法上" class="headerlink" title="三、接口表示一种能力：体现在接口的方法上"></a>三、接口表示一种能力：体现在接口的方法上</h2><p>关心实现类有何能力，而不关心实现细节<br>面向接口的约定而不考虑接口的具体实现</p>
-<h2 id="四、面向接口编程"><a href="#四、面向接口编程" class="headerlink" title="四、面向接口编程"></a>四、面向接口编程</h2><p>​    在面向对象编程中提倡面向接口编程，而不是面向实现编程。</p>
-<p>​    接口体现了约定和实现相分离的原则，通过面向接口编程，可以降低代码间的耦合性，提高代码的可扩展性，面向接口编程就意味着开发系统时，主题结构使用接口，接口构成系统的股价，这样就可以通过更换实现接口的类来实现更换系统</p>
-<p>​    面向接口编程可以实现接口和实现的分离，这样做最大的好处就是能够在客户端位置的情况下进行修改代码。</p>
-<p>​    良好的接口定义一定是来自于需求的，它绝对不是程序员绞尽脑汁想出来的</p>
-<h2 id="五、在C-中使用接口"><a href="#五、在C-中使用接口" class="headerlink" title="五、在C#中使用接口"></a>五、在C#中使用接口</h2><p>​    C#的接口语法和java相似</p>
-<p>​    <strong>定义接口</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[修饰符] interface 接口名： 父接口 1，父接口 2，······&#123;</span><br><span class="line">    属性定义</span><br><span class="line">    方法定义</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>实现接口</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">class 类名：父类名，接口1，接口2······&#123;		&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="接口区别"><a href="#接口区别" class="headerlink" title="接口区别"></a>接口区别</h4><ul>
-<li>java中接口通过 <strong>extends</strong> 来继承接口，类通过 <strong>implements</strong> 来实现接口；C#中通过冒号 “ ： ” 来实现这两个功能</li>
-<li>java接口中的成员变量（属性）都是常量，自动用 <strong>public static final</strong> 修饰；C#接口中不允许存在成员变量，但可以有属性。</li>
-<li>java接口中的属性和方法都可以使用 <strong>public</strong> 修饰；C#中默认用 <strong>public</strong> ，但不允许显式使用 <strong>public</strong> 修饰</li>
-<li>java接口中可以定义静态常量和方法，C#接口中不允许包括任何静态成员</li>
-</ul>
-<h2 id="六、总结"><a href="#六、总结" class="headerlink" title="六、总结"></a>六、总结</h2><p>![第四章 接口](第四章 接口\第四章接口.png)</p>
+<h2 id="7-总结"><a href="#7-总结" class="headerlink" title="7.总结"></a>7.总结</h2><p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131510925.png" alt="第八章 File IO总结"></p>
 ]]></content>
       <categories>
         <category>使用Java实现面向对象编程整理</category>
@@ -3443,7 +3392,58 @@
 <h4 id="5-泛型集合"><a href="#5-泛型集合" class="headerlink" title="5.泛型集合"></a>5.泛型集合</h4><p>如何解决以下强制类型转换时容易出现的异常问题?</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function">List <span class="title">get</span><span class="params">(<span class="keyword">int</span> index)</span>方法获取元素</span></span><br><span class="line"><span class="function">Map <span class="title">get</span><span class="params">(Object key)</span>方法获取元素</span></span><br><span class="line"><span class="function">Iterator <span class="title">next</span><span class="params">()</span>方法获取元素</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="4-总结"><a href="#4-总结" class="headerlink" title="4.总结"></a>4.总结</h2><p>![第六章 集合框架](第六章 集合框架/第六章集合框架.png)</p>
+<h2 id="4-总结"><a href="#4-总结" class="headerlink" title="4.总结"></a>4.总结</h2><p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131510202.png" alt="第六章 集合框架"></p>
+]]></content>
+      <categories>
+        <category>使用Java实现面向对象编程整理</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>第四章 接口</title>
+    <url>/2021/06/04/%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E6%8E%A5%E5%8F%A3/</url>
+    <content><![CDATA[<h2 id="一、什么是接口？"><a href="#一、什么是接口？" class="headerlink" title="一、什么是接口？"></a>一、什么是接口？</h2><p>接口同样是哟中规范和标准，题目可以约束类的行为，是一些方法特征的集合，但是没有方法的实现。</p>
+<p>接口可以看做一种特殊的“抽象类”，但是差异与抽象类万千不同的语法来表示，两者的设计观念也是不同的，抽象类利用与代码复用，接口利于代码的扩展和维护</p>
+<span id="more"></span>
+
+<h2 id="二、接口的语法"><a href="#二、接口的语法" class="headerlink" title="二、接口的语法"></a>二、接口的语法</h2><p>​    <strong>定义接口</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">[修饰符] <span class="class"><span class="keyword">interface</span> 接口名 <span class="keyword">extends</span> 父接口1，父接口2，·········</span>&#123;</span><br><span class="line">    	<span class="comment">//常量定义</span></span><br><span class="line">    	<span class="comment">//方法定义</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>​    类实现接口</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> 类名 <span class="keyword">extends</span> 父类名 <span class="keyword">implements</span> 接口1，接口2，······</span>&#123;</span><br><span class="line">    	<span class="comment">//类成员</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="接口定义的规则："><a href="#接口定义的规则：" class="headerlink" title="接口定义的规则："></a>接口定义的规则：</h4><ul>
+<li><p>接口的命名规则与类相同。如果修饰符是public，则该接口在整个项目中可见；如果是省略修饰符，则该接口只在当前包可见。</p>
+</li>
+<li><p>接口中可以定义常量，不能定义变量。接口中的属性都会自动用 <strong>public static final</strong> 修饰，即接口中的属性都是全局静态常量。接口中的常量必须在定义时制定初始值。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> PI=<span class="number">3.14</span>;</span><br><span class="line"><span class="keyword">int</span> PI=<span class="number">3.14</span>;	<span class="comment">//在接口中，这两个定义语句效果完全相同</span></span><br><span class="line"><span class="keyword">int</span> PI;			<span class="comment">//错误！在接口中必须制定初始值，在类中会有默认值</span></span><br></pre></td></tr></table></figure></li>
+<li><p>接口中所有的方法都是抽象方法。接口中的方法都会自动用 <strong>public abstract</strong> 修饰，即接口中只有全局抽象方法。</p>
+</li>
+<li><p>和抽象类一样，接口也不能实例化，接口不中不能有构造方法。</p>
+</li>
+<li><p>接口之间可以通过 <strong>extends</strong> 实现继承关系，一个接口可以继承多个接口，但接口不能继承类。</p>
+</li>
+<li><p>接口的实际类必须实现接口的全部方法，否则必须定义为抽象类。</p>
+</li>
+</ul>
+<h2 id="三、接口表示一种能力：体现在接口的方法上"><a href="#三、接口表示一种能力：体现在接口的方法上" class="headerlink" title="三、接口表示一种能力：体现在接口的方法上"></a>三、接口表示一种能力：体现在接口的方法上</h2><p>关心实现类有何能力，而不关心实现细节<br>面向接口的约定而不考虑接口的具体实现</p>
+<h2 id="四、面向接口编程"><a href="#四、面向接口编程" class="headerlink" title="四、面向接口编程"></a>四、面向接口编程</h2><p>​    在面向对象编程中提倡面向接口编程，而不是面向实现编程。</p>
+<p>​    接口体现了约定和实现相分离的原则，通过面向接口编程，可以降低代码间的耦合性，提高代码的可扩展性，面向接口编程就意味着开发系统时，主题结构使用接口，接口构成系统的股价，这样就可以通过更换实现接口的类来实现更换系统</p>
+<p>​    面向接口编程可以实现接口和实现的分离，这样做最大的好处就是能够在客户端位置的情况下进行修改代码。</p>
+<p>​    良好的接口定义一定是来自于需求的，它绝对不是程序员绞尽脑汁想出来的</p>
+<h2 id="五、在C-中使用接口"><a href="#五、在C-中使用接口" class="headerlink" title="五、在C#中使用接口"></a>五、在C#中使用接口</h2><p>​    C#的接口语法和java相似</p>
+<p>​    <strong>定义接口</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[修饰符] interface 接口名： 父接口 1，父接口 2，······&#123;</span><br><span class="line">    属性定义</span><br><span class="line">    方法定义</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>实现接口</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">class 类名：父类名，接口1，接口2······&#123;		&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="接口区别"><a href="#接口区别" class="headerlink" title="接口区别"></a>接口区别</h4><ul>
+<li>java中接口通过 <strong>extends</strong> 来继承接口，类通过 <strong>implements</strong> 来实现接口；C#中通过冒号 “ ： ” 来实现这两个功能</li>
+<li>java接口中的成员变量（属性）都是常量，自动用 <strong>public static final</strong> 修饰；C#接口中不允许存在成员变量，但可以有属性。</li>
+<li>java接口中的属性和方法都可以使用 <strong>public</strong> 修饰；C#中默认用 <strong>public</strong> ，但不允许显式使用 <strong>public</strong> 修饰</li>
+<li>java接口中可以定义静态常量和方法，C#接口中不允许包括任何静态成员</li>
+</ul>
+<h2 id="六、总结"><a href="#六、总结" class="headerlink" title="六、总结"></a>六、总结</h2><p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131510898.png" alt="第四章 接口"></p>
 ]]></content>
       <categories>
         <category>使用Java实现面向对象编程整理</category>

@@ -28,15 +28,15 @@
 <meta property="og:site_name" content="拾柒的博客">
 <meta property="og:description" content="在JavaScript中，所有的事物都是对象，如字符串，数值，数组，函数，所以本章在讲解之间先回顾一下，学习过的JavaScript数据类型。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://olinl.gitee.io/2021/07/18/JavaScript%E5%AF%B9%E8%B1%A1%E5%8F%8A%E5%88%9D%E5%A7%8B%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/image-20210718111954605.png">
-<meta property="og:image" content="https://olinl.gitee.io/2021/07/18/JavaScript%E5%AF%B9%E8%B1%A1%E5%8F%8A%E5%88%9D%E5%A7%8B%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/image-20210718112801650.png">
-<meta property="og:image" content="https://olinl.gitee.io/2021/07/18/JavaScript%E5%AF%B9%E8%B1%A1%E5%8F%8A%E5%88%9D%E5%A7%8B%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/image-20210718113518713.png">
-<meta property="og:image" content="https://olinl.gitee.io/2021/07/18/JavaScript%E5%AF%B9%E8%B1%A1%E5%8F%8A%E5%88%9D%E5%A7%8B%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/image-20210718114438758.png">
+<meta property="og:image" content="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131511835.png">
+<meta property="og:image" content="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131511738.png">
+<meta property="og:image" content="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131511152.png">
+<meta property="og:image" content="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131511300.png">
 <meta property="article:published_time" content="2021-07-18T02:10:59.000Z">
-<meta property="article:modified_time" content="2021-07-18T03:44:50.859Z">
+<meta property="article:modified_time" content="2022-05-13T07:11:54.203Z">
 <meta property="article:author" content="姜霖">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://olinl.gitee.io/2021/07/18/JavaScript%E5%AF%B9%E8%B1%A1%E5%8F%8A%E5%88%9D%E5%A7%8B%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/image-20210718111954605.png">
+<meta name="twitter:image" content="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131511835.png">
 
 
 <link rel="canonical" href="https://olinl.gitee.io/2021/07/18/JavaScript%E5%AF%B9%E8%B1%A1%E5%8F%8A%E5%88%9D%E5%A7%8B%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">
@@ -251,10 +251,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2021-07-18 10:10:59 / 修改时间：11:44:50" itemprop="dateCreated datePublished" datetime="2021-07-18T10:10:59+08:00">2021-07-18</time>
+      <time title="创建时间：2021-07-18 10:10:59" itemprop="dateCreated datePublished" datetime="2021-07-18T10:10:59+08:00">2021-07-18</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2022-05-13 15:11:54" itemprop="dateModified" datetime="2022-05-13T15:11:54+08:00">2022-05-13</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -389,7 +395,7 @@
 <li><p>prototype就是通过调用构造函数而创建的那个对象实例的原型对象，使用原型对象的好处就是可以让所有对象实例共享它所有的属性和方法，也就是说不必再构造函数中定义对象实例的信息，可以将这些信息直接添加到原型对象中。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Flower</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    Flower.prototype.name=<span class="string">&quot;曼陀罗花&quot;</span>;</span><br><span class="line">    Flower.prototype.genera=<span class="string">&quot;茄科 曼陀罗属&quot;</span>;</span><br><span class="line">    Flower.prototype.area=<span class="string">&quot;印度、中国北部&quot;</span>;</span><br><span class="line">    Flower.prototype.uses=<span class="string">&quot;观赏或药用&quot;</span>;</span><br><span class="line">    Flower.prototype.showName=<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        alert(<span class="built_in">this</span>.name);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> flower1=<span class="keyword">new</span> Flower();</span><br><span class="line">    flower1.showName();</span><br><span class="line">    <span class="keyword">var</span> flower2=<span class="keyword">new</span> Flower();</span><br><span class="line">    flower2.showName();</span><br><span class="line">    alert(flower1.showName==flower2.showName);</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2021/07/18/JavaScript%E5%AF%B9%E8%B1%A1%E5%8F%8A%E5%88%9D%E5%A7%8B%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/image-20210718111954605.png" alt="image-20210718111954605"></p>
+<p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131511835.png" alt="image-20210718111954605"></p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">对象._ _proto_ _指向原型对象</span><br><span class="line">原型对象用<span class="title">constructor</span>属性指向构造函数</span><br><span class="line">类用<span class="title">prototype</span>执行原型对象</span><br></pre></td></tr></table></figure></li>
 </ol>
 </li>
@@ -415,7 +421,7 @@
 <li><p>一个原型对象是另一个原型对象的实例<br>相关的原型对象层层递进，就构成了实例与原型的链条，就是原型链</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Humans</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.foot=<span class="number">2</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    Humans.prototype.getFoot=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">       <span class="keyword">return</span> <span class="built_in">this</span>.foot;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">Man</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.head=<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    Man.prototype=<span class="keyword">new</span> Humans();          <span class="comment">//继承了Humans</span></span><br><span class="line">    Man.prototype.getHead=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">this</span>.head;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">var</span> man1=<span class="keyword">new</span> Man();</span><br><span class="line">    alert(man1.getFoot());                          <span class="comment">//2</span></span><br><span class="line">    alert(man1 <span class="keyword">instanceof</span> <span class="built_in">Object</span>);          <span class="comment">//true     </span></span><br><span class="line">    alert(man1 <span class="keyword">instanceof</span> Humans);        <span class="comment">//true</span></span><br><span class="line">    alert(man1 <span class="keyword">instanceof</span> Man);          <span class="comment">//true</span></span><br></pre></td></tr></table></figure></li>
 <li><p>构造函数和原型之间的关系</p>
-<p><img src="/2021/07/18/JavaScript%E5%AF%B9%E8%B1%A1%E5%8F%8A%E5%88%9D%E5%A7%8B%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/image-20210718112801650.png" alt="image-20210718112801650"></p>
+<p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131511738.png" alt="image-20210718112801650"></p>
 </li>
 <li><p>实际上就是重写圆形对象，赋值于一个新类型的实例，也就是说，原来存于新实例中的所有属性和方法，现在也存在与新的原型对象中了</p>
 </li>
@@ -430,7 +436,7 @@
 </li>
 <li>最后一步才会找到该方法，在找不到属性或方法的情况下，搜索过程总要一环一环地前行到原型链的末端才会停下来。</li>
 <li>上面示例展示的原型链还少一环,大家知道，所有的引用类型默认都继承了Object，而这个继承也是通过原型链实现的。所有函数都默认原型都是Object 的实例，因此默认原型都会包含一个内部指针，指向Object.prototype，这也正是所有自定义类型都会继承toString( ). valueOf()等默认方法的根本原因，所以上面示例展示的原型链中还应该包括另外一个继承层次,此示例的完整原型链如图4.8所示。</li>
-<li><img src="/2021/07/18/JavaScript%E5%AF%B9%E8%B1%A1%E5%8F%8A%E5%88%9D%E5%A7%8B%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/image-20210718113518713.png" alt="image-20210718113518713"></li>
+<li><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131511152.png" alt="image-20210718113518713"></li>
 </ol>
 </li>
 </ol>
@@ -469,7 +475,7 @@
 </ol>
 </li>
 </ol>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p><img src="/2021/07/18/JavaScript%E5%AF%B9%E8%B1%A1%E5%8F%8A%E5%88%9D%E5%A7%8B%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/image-20210718114438758.png" alt="image-20210718114438758"></p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p><img src="https://olinimg.oss-cn-shanghai.aliyuncs.com/HexoImg/202205131511300.png" alt="image-20210718114438758"></p>
 
     </div>
 
@@ -545,14 +551,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">66k</span>
+    <span title="站点总字数">65k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">1:01</span>
+    <span title="站点阅读时长">59 分钟</span>
   </span>
 </div>
 <span id="busuanzi_container_site_uv">
